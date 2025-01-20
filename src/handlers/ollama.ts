@@ -88,7 +88,7 @@ async function getOllamaResponse(
   baseUrl: string,
 ): Promise<Response> {
   return fetch(`${baseUrl}/api/generate`, {
-    method: 'POST',
+    method: 'GET',
     headers: {
       'Content-Type': 'application/json',
     },
